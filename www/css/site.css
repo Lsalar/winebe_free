@@ -1,0 +1,234 @@
+@import '../r/r.css';
+@import 'precarga.min.css';
+
+/*
+* * * * *
+* Configuracion general
+* * * * * 
+*/
+html {
+    overflow: hidden;
+}
+
+@media (min-width: 600px) {
+  /* width */
+*::-webkit-scrollbar {
+  width: 0px;
+}
+}
+
+/* width */
+*::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #ebebeb;
+  border-radius: 10px;
+  position: absolute;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+  background: var(--color-winebe);
+  border-radius: 10px;
+  position: absolute;
+}
+
+nav#nav_interna {
+    display: inline-block;
+    width: 220px;
+    height: 100%;
+    vertical-align: top;
+}
+
+.fondo-tramado-interno
+{
+  background: url('../assets/trama.png') repeat fixed 0 0 #ffffff;
+}
+._fondo_tramado
+{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../assets/trama.png') repeat fixed 0 0 transparent;
+}
+
+._banda_fondo_color_winebe
+{
+  background-color: var(--color-winebe-tercero);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  max-height: 200px;
+  display: block;
+  z-index: 0;
+}
+._contenedor_general_max_mobile
+{
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: block;
+  background-color: #ffffff;
+}
+
+.section_body {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #fcfcfc;
+    height: 100%;
+}
+  .con_header {
+    height: calc(100% - 45px) !important;
+    overflow-x: hidden;
+    overflow-y: auto; 
+  }
+.content
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+  ul.menu {
+      height: 100%;
+      transform: none;
+  }
+
+	.height-100
+	{
+		height: 100%;
+	}
+	.width-100
+	{
+		width: 100%;
+	}
+  .width-50
+  {
+    width: 50%;
+  }
+  .opacity-07
+  {
+    opacity: 0.7;
+  }
+.max-container-center-1300
+{
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: left;
+}
+.max-container-center-1024
+{
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: left;
+}
+.max-container-center-800
+{
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.centra_relativo_vertical
+{
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+table.table.table-striped.table-hover.table-scroll {
+    padding: 1rem 0 3rem 0;
+}
+
+/* HEADER */
+header {
+    display: block;
+    width: 100%;
+    padding: 3px 10px;
+    text-align: center;
+    background-color: var(--color-fondo-winebe);
+    height: 45px;
+    color: #ffffff;
+    position: relative;
+    z-index: 20;
+}
+
+button#notificacion, button#menu_usuario {background-color: transparent;border: none;color: #ffffff;font-size: 1rem;position: relative;}
+
+#menu_navegacion
+{
+  font-size: 0.8rem;
+  vertical-align: top;
+  text-align: left;
+  color: #3b3b3b;
+}
+span#menu_link {
+    font-size: 1.3rem;
+    vertical-align: top;
+}
+
+span#menu_link i {
+    vertical-align: top;
+}
+
+.card-precio
+{
+  padding: 0.2rem .8rem;
+}
+
+.modal-full-modificado
+{
+  height: 100% !important;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: 100%;
+  max-width: 100% !important;
+  width: 100%;
+  padding: 0;
+}
+.titulo_separador {
+    margin-bottom: 0.5rem;
+    display: block;
+    width: 100%;
+}
+
+#__card_noty_body .tile *
+{
+  color:#000000;
+}
+#__card_noty_body .tile .tile-icon {
+    width: 40px;
+    padding: 5px 0;
+    border-radius: 100%;
+    background-color: #f2f2f2;
+    font-size: 20px;
+    font-weight: bold;
+}
+.popover-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 270px;
+}
+
+.alerta_de_vacio
+{
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  padding: 0.8rem;
+  box-sizing: border-box;
+}
+
